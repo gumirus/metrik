@@ -1,48 +1,151 @@
 :root {
-  --font-family: "Manrope", sans-serif;
-  --white: #FFFFFF;
-  --red: #AD1818;
-  --text-header: #101010;
+  --font-family: 'Manrope', sans-serif;
+  --white: #ffffff;
+  --red: #ad1818;
+  --text-grey: #989494;
+  --text-black: #000000;
 }
 
 body {
   font-family: var(--font-family);
-  background-color: var(--white); 
-}
-
-.main {  
-  height: 560px;
-  width: 1150px;
-  display: flex;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  align-items: center;
+  padding: 20px 80px;
 }
 
 nav a {
+  position: relative;
   margin: 0 15px;
   text-decoration: none;
-  color: var(--text-header);
-}  
+  color: var(--text-main);
+  text-transform: uppercase;
+}
 
-h1{
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: var(--text-black);
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a:active,
+nav a:focus {
+  color: var(--text-grey);
+}
+
+nav a:active::after,
+nav a:focus::after {
+  width: 100%;
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+h1 {
+  color: var(--text-black);
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -3%;
+  text-align: left;
+}
+
+h2 {
+  color: var(--text-black);
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 61px;
+}
+
+img {
+  width: 100%;
+  max-width: 1150px;
+  height: auto;
+  margin: 20px 0;
+}
+
+p {
+  max-width: 1048px;
+  color: var(--text-black);
   margin-bottom: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.main-image {
+  position: relative;
+  width: 100%;
+  max-width: 1150px;
+  margin: 20px 0;
+}
+
+.main-image img {
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  position: absolute;
+  width: 450px;
+  left: 5%;
+  bottom: 10%;
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  padding: 10px;
+}
+
+.about {
+  position: relative;
+  max-width: 1048px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.tag {
+  color: var(--text-black);
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 50px;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .btn {
   display: inline-block;
-  margin-top: 20px;
+  align-self: flex-start;
   padding: 10px 20px;
-  color: var(--red);
-  border: 2px solid  var(--red);
+  color: var(--white);
+  background-color: var(--red);
   text-decoration: none;
-  cursor: pointer;
+  border: 2px solid var(--red);
+  transition: 0.3s;
+  padding: 20px 40px 20px 40px;
+  margin-top: 20px;
 }
 
 .btn:hover {
-  color : var(--btn);
-  background-color:var(--red);
+  background-color: transparent;
+  color: var(--red);
 }
