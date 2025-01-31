@@ -8,13 +8,21 @@
 
 body {
   font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1153px;
+  margin: 0 auto;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 80px;
+  padding: 20px 0;
+  text-align: center;
 }
 
 nav a {
@@ -26,7 +34,7 @@ nav a {
 }
 
 nav a::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -2px;
@@ -50,13 +58,10 @@ nav a:focus::after {
   width: 100%;
 }
 
-
 main {
   display: flex;
   flex-direction: column;
   text-align: center;
-  max-width: 1150px;
-  margin: 0 auto;
   padding: 50px 0;
 }
 
