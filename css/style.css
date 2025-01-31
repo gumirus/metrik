@@ -1,0 +1,48 @@
+:root {
+  --font-family: "Manrope", sans-serif;
+  --white: #FFFFFF;
+  --red: #AD1818;
+  --text-header: #101010;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--white); 
+}
+
+.main {  
+  height: 560px;
+  width: 1150px;
+  display: flex;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: var(--text-header);
+}  
+
+h1{
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  color: var(--red);
+  border: 2px solid  var(--red);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color : var(--btn);
+  background-color:var(--red);
+}
