@@ -2,19 +2,24 @@
   --font-family: 'Manrope', sans-serif;
   --white: #ffffff;
   --red: #ad1818;
+  --black: #000000;
   --text-grey: #989494;
   --text-black: #000000;
 }
 
 body {
   font-family: var(--font-family);
-  margin: 0;
-  padding: 0;
 }
 
 .container {
-  width: 1153px;
+  background-color: var(--white);
+  width: 1150px;
   margin: 0 auto;
+}
+
+.wrapper {
+  background-color: var(--black);
+  padding: 1px;
 }
 
 header {
@@ -23,6 +28,7 @@ header {
   align-items: center;
   padding: 20px 0;
   text-align: center;
+  margin: 3px;
 }
 
 nav a {
@@ -72,6 +78,7 @@ h1 {
   line-height: 60px;
   letter-spacing: -3%;
   text-align: left;
+  margin: 3px;
 }
 
 h2 {
@@ -79,6 +86,7 @@ h2 {
   font-size: 45px;
   font-weight: 400;
   line-height: 61px;
+  margin: 3px;
 }
 
 img {
@@ -94,6 +102,7 @@ p {
   margin-bottom: 20px;
   font-size: 20px;
   text-transform: uppercase;
+  margin: 3px;
 }
 
 .main-image {
@@ -135,6 +144,7 @@ figcaption {
   line-height: 50px;
   display: block;
   margin-bottom: 10px;
+  margin: 3px;
 }
 
 .btn {
@@ -148,6 +158,7 @@ figcaption {
   transition: 0.3s;
   padding: 20px 40px 20px 40px;
   margin-top: 20px;
+  margin: 3px;
 }
 
 .btn:hover {
