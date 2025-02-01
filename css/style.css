@@ -103,6 +103,8 @@ p {
   font-size: 20px;
   text-transform: uppercase;
   margin: 3px;
+  margin-top: 50px;
+  padding-bottom: 30px;
 }
 
 .main-image {
@@ -139,8 +141,8 @@ figcaption {
 
 .tag {
   color: var(--text-black);
-  font-size: 45px;
-  font-weight: 400;
+  font-size: 40px;
+  font-weight: 400px;
   line-height: 50px;
   display: block;
   padding-bottom: 30px;
