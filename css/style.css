@@ -27,14 +27,16 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
-  text-align: center;
+  padding: 26px 0;
+  text-align: right;
   margin: 3px;
 }
 
 nav a {
   position: relative;
-  margin: 0 15px;
+  margin: 0 60px;
+  margin-right: 0;
+  font-size: 18px;
   text-decoration: none;
   color: var(--text-main);
   text-transform: uppercase;
@@ -48,7 +50,7 @@ nav a::after {
   width: 0;
   height: 2px;
   background-color: var(--text-black);
-  transition: width 0.3s ease;
+  transition: width 0.1s ease;
 }
 
 nav a:hover::after {
@@ -69,7 +71,6 @@ main {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 8px 0;
 }
 
 h1 {
@@ -102,7 +103,7 @@ p {
   max-width: 1048px;
   color: var(--text-black);
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
   margin: 3px;
   margin-top: 50px;
