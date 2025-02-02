@@ -79,6 +79,7 @@ h1 {
   line-height: 60px;
   letter-spacing: -3%;
   text-align: left;
+  padding-top: 33px;
   margin: 3px;
 }
 
@@ -94,7 +95,7 @@ img {
   width: 100%;
   max-width: 1150px;
   height: auto;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 p {
