@@ -3,8 +3,7 @@
   --white: #ffffff;
   --red: #ad1818;
   --black: #000000;
-  --text-grey: #989494;
-  --text-black: #000000;
+  --grey: #989494;
 }
 
 body {
@@ -38,7 +37,7 @@ nav a {
   margin-right: 0;
   font-size: 18px;
   text-decoration: none;
-  color: var(--text-main);
+  color: var(--black);
   text-transform: uppercase;
 }
 
@@ -49,7 +48,7 @@ nav a::after {
   bottom: -2px;
   width: 0;
   height: 1px;
-  background-color: var(--text-grey);
+  background-color: var(--grey);
   transition: width 0.1s ease;
 }
 
@@ -59,7 +58,7 @@ nav a:hover::after {
 
 nav a:active,
 nav a:focus {
-  color: var(--text-grey);
+  color: var(--grey);
 }
 
 nav a:active::after,
@@ -74,18 +73,18 @@ main {
 }
 
 h1 {
-  color: var(--text-black);
+  color: var(--black);
   font-size: 60px;
   font-weight: 400;
   line-height: 60px;
   letter-spacing: -3%;
   text-align: left;
-  padding-top: 33px;
+  padding: 33px 0;
   margin: 3px;
 }
 
 h2 {
-  color: var(--text-black);
+  color: var(--black);
   font-size: 45px;
   font-weight: 400;
   line-height: 61px;
@@ -101,20 +100,19 @@ img {
 
 p {
   max-width: 1048px;
-  color: var(--text-black);
+  color: var(--black);
   margin-bottom: 20px;
   font-size: 18px;
   text-transform: uppercase;
   margin: 3px;
   margin-top: 50px;
-  padding-bottom: 30px;
+  padding: 30px 0;
 }
 
 .main-image {
   position: relative;
   width: 100%;
   max-width: 1150px;
-  margin: 20px 0;
 }
 
 .main-image img {
@@ -140,10 +138,11 @@ figcaption {
   max-width: 1048px;
   text-align: left;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .tag {
-  color: var(--text-black);
+  color: var(--black);
   font-size: 40px;
   font-weight: 400px;
   line-height: 50px;
@@ -170,4 +169,55 @@ figcaption {
 .btn:hover {
   background-color: transparent;
   color: var(--red);
+}
+
+.projects {
+  position: relative;
+  max-width: 1048px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.project {
+  margin-bottom: 90px;
+}
+
+.address {
+  color: var(--black);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 41px;
+  letter-spacing: -3%;
+  text-align: left;
+}
+
+.detailed {
+  color: var(--red);
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: -3%;
+  text-align: left;
+  cursor: pointer;
+}
+
+h3 {
+  color: var(--red);
+  border: solid 2px var(--red);
+  background-color: var(--white);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 41px;
+  letter-spacing: -3%;
+  text-align: center;
+  padding: 56px 0;
+  margin-bottom: 150px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+h3:hover {
+  background-color: var(--red);
+  color: var(--white);
 }
