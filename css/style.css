@@ -245,11 +245,8 @@ h4 {
 }
 
 .container3 {
-  /* width: 100%; */
-  max-width: 1390px;
+  width: 1400px;
   margin: 0 auto;
-  box-sizing: border-box;
-  background-color: var(--white);
 }
 
 .bedroom {
@@ -257,7 +254,7 @@ h4 {
 }
 
 .bedroom img {
-  width: 100%;
+  width: 1400;
   height: auto;
   max-width: 1390px;
   display: block;
@@ -275,6 +272,8 @@ h4 {
 
 .contacts {
   padding: 80px;
+  background-color:var(--white);
+  margin: 0 5px;
 }
 
 .contacts img {
@@ -300,12 +299,10 @@ h4 {
 }
 
 footer {
-  max-width: 1390px;
-  margin: auto;
-  box-sizing: border-box;
   background-color: var(--grey-dark);
   padding: 50px;
   text-align: center;
+  margin: 0 5px;
 }
 
 footer nav a {
